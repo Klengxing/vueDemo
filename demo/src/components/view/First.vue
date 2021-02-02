@@ -4,6 +4,7 @@
     <h2>{{ $store.state.name }}</h2>
     <confirm text="注册" @message="getMeaasge"></confirm>
     <button @click="add()">打印vuex</button>
+    <button @click="changeText()">改变文字</button>
     <p>
       <router-link to="/second">去第二个页面</router-link>
     </p>

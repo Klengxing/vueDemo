@@ -2,6 +2,7 @@
   <div class="confirm-button">
     <h1>{{ msg }}</h1>
     <button @click="getButtonClick">{{text || '确认'}}</button>
+    <button @click="reloadMy">刷新我自己</button>
   </div>
 </template>
 
@@ -11,7 +12,8 @@
         props: ["text"],
         data() {
             return {
-                msg: '我是子页面'
+                msg: '我是子页面',
+                msg2: '我是子页面2号',
             }
         },
         methods: {
